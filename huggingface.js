@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function checkModelAvailability(modelName) {
     const apiUrl = `https://api-inference.huggingface.co/models/${modelName}`;
-    const apiToken = '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'; // Replace with your Hugging Face API token
+    const apiToken = ''; // Replace with your Hugging Face API token
 
     try {
         const response = await axios.get(apiUrl, {
